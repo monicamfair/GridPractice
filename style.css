@@ -1,0 +1,23 @@
+.item1 {grid-area: nav;}
+.item2 {grid-area: header;}
+.item3 {grid-area: main;}
+.item4 {grid-area: aside;}
+.item5 {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'header header header header header header'
+    'header header header header header header'
+    'main main main main aside aside'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: blue;
+    padding: 10px;
+}
+
+
+
+
