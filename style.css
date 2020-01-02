@@ -1,4 +1,6 @@
-.item1 {grid-area: nav;}
+.item1 {grid-area: nav;
+    height: auto;
+    width: auto;}
 .item2 {grid-area: header;}
 .item3 {grid-area: main;}
 .item4 {grid-area: aside;}
@@ -6,6 +8,10 @@
 
 .grid-container {
     display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
     grid-template-areas: 
     'nav nav nav nav nav nav'
     'header header header header header header'
@@ -16,6 +22,12 @@
     grid-gap: 10px;
     background-color: blue;
     padding: 10px;
+}
+
+.grid-container > * {
+    border: solid  black 1px;
+    background-color: white;
+    padding: 20px;
 }
 
 
